@@ -1,0 +1,26 @@
+<div class="row m-5">
+    <div class="col">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>nombre</th>
+                    <th>apellido</th>
+                    <th>cedula</th>
+                    <th>correo</th>
+                    <th>telefono</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let pers of persona; let i = index">
+                    <td>{{ pers.nombre }}</td>
+                    <td>{{ pers.apellido }}</td>
+                    <td>{{ pers.cedula }}</td>
+                    <td>{{ pers.correo }}</td>
+                    <td>{{ pers.telefono }}</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
